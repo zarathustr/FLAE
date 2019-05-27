@@ -10,3 +10,6 @@ In MATLAB software, type:
 **$ q = FLAE(body_vectors, ref_vectors, weights, 'symbolic');**
 
 in which **body_vectors, ref_vectors** are stacked body and reference vector matrices with 3xn dimensions; **weights** is an 1xn or nx1 vector with all positive numbers and their sum equals to 1; The option **'symbolic'** points to the solving method using symbolic solutions to the quatic polynomial while it can be replaced by **'eig'** and **'newton'** as well which correspond to the eigen-decomposition of MATLAB and Newton iteration respectively. The final result is in the form of an unitary quaternion **q** that can be later cast into rotation matrix or Euler angles.
+
+# Acknowledgement
+The authors would like to thank Dr. Yaguang Yang from NRC and Dr. F. Landis Markley from NASA Goddard Space Flight Center for their comments and assistance in improving the architecture of this algorithm.
